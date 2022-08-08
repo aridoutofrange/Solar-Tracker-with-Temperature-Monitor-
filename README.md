@@ -23,7 +23,7 @@ Solar tracker with built-in temperature monitor to prevent overheating and keep 
 <li> One TMP36 temperature sensor</li> 
 
 ## Wiring Diagram
-<img alt="Wiring Diagram" src="https://i.ibb.co/3YB7fr2/Screenshot-495.png" width="70%" height="70%">
+<img alt="Wiring Diagram" src="https://i.ibb.co/hy0TkBv/Solar-Tracker-with-Temperature-Monitor.png" width="70%" height="70%">
 
 ## Schematic Diagram
 <img alt="Schematic Diagram" src="https://i.ibb.co/yNLfkJk/Solar-Tracker-with-Temperature-Monitor-1-1.png" width="70%" height="70%">
