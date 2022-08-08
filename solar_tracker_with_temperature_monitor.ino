@@ -1,13 +1,12 @@
 //Importing Libraries
 #include <Servo.h>
-
 #include <LiquidCrystal.h>
 
-//Initializing LEDs
+//Initializing pins used by LEDs
 #define ledRed 4
 #define ledGreen 2
 
-//Initializing slide switch
+//Initializing pin used by slide switch
 #define slideSwitch 13
 
 //Initializing The Horizontal Servo (Y-Axis)
@@ -29,12 +28,13 @@ int ldrEast = A2;
 int ldrWest = A3;
 
 LiquidCrystal lcd(12, 11, 10, 9, 8, 7); //Initializing pins used by LCD
-float value;
-int tmp = A4;
-int buzzer = 6;
+float temp;
+int tmp36 = A4; //Initializing pins used by tmp36
+int buzzer = 6; //Initializing pins used by buzzer
 
+//Setup code
 void setup() {
-  pinMode(tmp, INPUT);
+  pinMode(tmp36, INPUT);
   lcd.begin(16, 2);
   pinMode(buzzer, OUTPUT);
   pinMode(ledRed, OUTPUT);
@@ -52,20 +52,21 @@ void setup() {
 
 void loop() {
   int state = digitalRead(slideSwitch);
-  value = (value - 0.5) * 100.0;
+  temp = (temp - 0.5) * 100.0; //Temperature value
   lcd.setCursor(0, 0);
-  lcd.print("Temperature:");
-  lcd.print(value);
+  lcd.print("Temp:");
+  lcd.print(temp);
+  lcd.print("\262C");
   delay(90);
   lcd.clear();
 
-  if (value > 85 && state == 0) { //Maximum temperature that most solar panels tolerate
+  if (temp > 85 && state == 0) { //Maximum temperature that most solar panels tolerate
     lcd.setCursor(0, 2);
     lcd.print("Alert! High Temp!");
     tone(buzzer, 500, 700);
     digitalWrite(ledRed, HIGH);
     digitalWrite(ledGreen, LOW);
-  } else if (value < 85 && state == 0) {
+  } else if (temp < 85 && state == 0) {
     digitalWrite(ledRed, LOW);
     digitalWrite(ledGreen, HIGH);
   } else if (state == 1) {
@@ -76,16 +77,16 @@ void loop() {
   servoX = servoXAxis.read();
   servoY = servoYAxis.read();
 
-  int east = analogRead(ldrEast);
-  int south = analogRead(ldrSouth);
   int west = analogRead(ldrWest);
+  int east = analogRead(ldrEast);
   int north = analogRead(ldrNorth);
-  value = analogRead(tmp) * 0.004882814;
+  int south = analogRead(ldrSouth);
+  temp = analogRead(tmp36) * 0.004882814;
 
-  int avgNorth = (east + south) / 2;
-  int avgSouth = (west + north) / 2;
-  int avgWest = (east + west) / 2;
-  int avgEast = (south + north) / 2;
+  int avgWest = (east + west) / 2; //Average west
+  int avgEast = (south + north) / 2; //Average east
+  int avgNorth = (east + south) / 2; //Average north
+  int avgSouth = (west + north) / 2; //Average south
 
   if (avgNorth < avgSouth) {
     servoYAxis.write(servoY + 1);
