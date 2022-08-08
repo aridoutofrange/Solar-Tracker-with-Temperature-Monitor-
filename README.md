@@ -15,7 +15,7 @@ Solar tracker with built-in temperature monitor to prevent overheating and keep 
 <li> One red LED</li> 
 <li> One slide switch</li> 
 <li> Jumper cables </li> 
-<li> One buzzer</li>
+<li> One 5V buzzer</li>
 <li> Four LDRs </li>
 <li> Two 100Ω resistors</li> 
 <li> Four 10kΩ resistors</li> 
