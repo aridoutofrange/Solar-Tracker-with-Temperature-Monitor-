@@ -16,9 +16,9 @@ Solar tracker with built-in temperature monitor to prevent overheating and keep 
 <li> Jumper cables </li> 
 <li> One buzzer</li>
 <li> Four LDRs </li>
-<li> Two 100 ohms resistors</li> 
-<li> Four 10k ohms resistors</li> 
-<li> Two 1k ohms resistors</li> 
+<li> Two 100Ω resistors</li> 
+<li> Four 10kΩ resistors</li> 
+<li> Two 1kΩ resistors</li> 
 <li> One 16X2 LCD</li> 
 <li> One TMP36 temperature sensor</li> 
 
