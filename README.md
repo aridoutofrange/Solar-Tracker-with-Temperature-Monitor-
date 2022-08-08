@@ -8,3 +8,17 @@ Solar panel operates at specific temperature with 15°C - 35°C being the optima
 Solar tracker with built-in temperature monitor to prevent overheating and keep the solar panel to stay at the desired operating region.
 
 
+## Components Used
+<li> Two micro servos </li>
+<li> One green LED</li>
+<li> One red LED</li> 
+<li> One slide switch</li> 
+<li> Jumper cables </li> 
+<li> One buzzer</li>
+<li> Four LDRs </li>
+<li> Two 100 ohms resistors</li> 
+<li> Four 10k ohms resistors</li> 
+<li> Two 1k ohms resistors</li> 
+<li> One 16X2 LCD</li> 
+
+
