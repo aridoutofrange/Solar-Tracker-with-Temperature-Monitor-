@@ -27,3 +27,6 @@ Solar tracker with built-in temperature monitor to prevent overheating and keep 
 ## Schematic Diagram
 <img alt="Schematic Diagram" src="https://i.ibb.co/yNLfkJk/Solar-Tracker-with-Temperature-Monitor-1-1.png" width="70%" height="70%">
 <img alt="Schematic Diagram" src="https://i.ibb.co/TBTNPLS/Solar-Tracker-with-Temperature-Monitor-1-2.png" width="70%" height="70%">
+
+## Simulation
+You can simulate the solar tracker here + [Simulation](https://www.tinkercad.com/things/eT8l4CDIuDa)
