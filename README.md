@@ -9,6 +9,7 @@ Solar tracker with built-in temperature monitor to prevent overheating and keep 
 
 
 ## Components Used
+<li> Arduino Uno R3</li>
 <li> Two SM-S2309S micro servos </li>
 <li> One green LED</li>
 <li> One red LED</li> 
