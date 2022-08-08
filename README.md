@@ -9,7 +9,7 @@ Solar tracker with built-in temperature monitor to prevent overheating and keep 
 
 
 ## Components Used
-<li> Two micro servos </li>
+<li> Two SM-S2309S micro servos </li>
 <li> One green LED</li>
 <li> One red LED</li> 
 <li> One slide switch</li> 
