@@ -37,7 +37,8 @@ You can simulate the solar tracker [here](https://www.tinkercad.com/things/eT8l4
 
 ## References
 Sunrun Team. (2021, November 29). Do solar panels work in cold weather? Sunrun. Retrieved August 8, 2022, from https://www.sunrun.com/go-solar-center/solar-articles/do-solar-panels-work-in-cold-weather#:~:text=Even%20in%20below%2Dfreezing%20weather,optimal%20for%20solar%20panel%20efficiency.&amp;text=So%20long%20as%20sunlight%20is,panel%2C%20it%20will%20generate%20electricity.
-<br>
+
+
 Sendy, A. (2019, January 1). How hot do solar panels get and how does it affect my system? Solar Reviews. Retrieved August 8, 2022, from https://www.solarreviews.com/blog/how-hot-can-solar-panels-get#:~:text=Most%20solar%20panels%20have%20a,temperatures%20will%20not%20degrade%20them.
 
 
