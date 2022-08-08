@@ -20,6 +20,7 @@ Solar tracker with built-in temperature monitor to prevent overheating and keep 
 <li> Four 10k ohms resistors</li> 
 <li> Two 1k ohms resistors</li> 
 <li> One 16X2 LCD</li> 
+<li> One TMP36 sensor</li> 
 
 ## Wiring Diagram
 <img alt="Wiring Diagram" src="https://i.ibb.co/3YB7fr2/Screenshot-495.png" width="70%" height="70%">
